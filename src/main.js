@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors')
 const app = express()
-const PORT = 80;
+const PORT = 80;    //port 80 maybe in use (try another port)
 app.use(express.json());
 app.use(
     cors({
@@ -29,5 +29,4 @@ app.post('/users/:id', (req, res) => {
 app.listen(
     PORT,
     () => console.log(`listening on http://localhost:${80}`)
-    //port 80 maybe in use (try another port)
 )
