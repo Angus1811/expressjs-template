@@ -28,5 +28,5 @@ app.post('/users/:id', (req, res) => {
 
 app.listen(
     PORT,
-    () => console.log(`listening on http://localhost:${80}`)
+    () => console.log(`listening on http://localhost:${PORT}`)
 )
